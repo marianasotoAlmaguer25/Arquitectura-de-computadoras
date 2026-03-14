@@ -1,0 +1,103 @@
+ //<3<3<3<3<3<3<3<3<3<3<3<3
+//1.COMPUERTA AND
+//<3<3<3<3<3<3<3<3<3<3<3<3
+//1. Creacion de modulo y definir I/O
+module compuerta_and( 
+	input A, 
+	input B, 
+	output c
+	);
+/*2.definicion de componente internos(reg, cables)
+queda vacia porque trabajamos solo con logica */
+// 3.cuerpo de modulo,asignaciones, instancias
+	assign c = A & B;
+endmodule
+
+//1. Creacion de modulo y definir I/O
+//<3<3<3<3<3<3<3<3<3<3<3<3
+//2.COMPUERTA NAND
+//<3<3<3<3<3<3<3<3<3<3<3<3
+module compuerta_nand(
+	input A,
+	input B,
+	output c
+	);
+/*2.definicion de componente internos(reg, cables)
+queda vacia porque trabajamos solo con logica */
+// 3.cuerpo de modulo,asignaciones, instancias
+	assign c = ~(A & B);
+endmodule 
+
+//<3<3<3<3<3<3<3<3<3<3<3<3
+// 3.COMPUERTA OR
+//<3<3<3<3<3<3<3<3<3<3<3<3
+//1. Creacion de modulo y definir I/O
+module compuerta_or(
+	input A,
+	input B,
+	output c
+	);
+/*2.definicion de componente internos(reg, cables)
+queda vacia porque trabajamos solo con logica */
+// 3.cuerpo de modulo,asignaciones, instancias
+	assign c = A | B;
+endmodule
+ 
+//<3<3<3<3<3<3<3<3<3<3<3<3
+// 4.COMPUERTA NOR
+//<3<3<3<3<3<3<3<3<3<3<3<3
+//1. Creacion de modulo y definir I/O
+module compuerta_nor(
+	input A,
+	input B,
+	output c
+	);
+/*2.definicion de componente internos(reg, cables)
+queda vacia porque trabajamos solo con logica */
+// 3.cuerpo de modulo,asignaciones, instancias
+	assign c = ~(A | B);
+endmodule
+
+//<3<3<3<3<3<3<3<3<3<3<3<3
+// 5.COMPUERTA NOT
+//<3<3<3<3<3<3<3<3<3<3<3<3
+//1. Creacion de modulo y definir I/O
+module compuerta_not(
+	input A,
+	output c
+	);
+/*2.definicion de componente internos(reg, cables)
+queda vacia porque trabajamos solo con logica */
+// 3.cuerpo de modulo,asignaciones, instancias
+	assign c = ~A;
+endmodule
+
+//<3<3<3<3<3<3<3<3<3<3<3<3
+// 6.COMPUERTA XOR
+//<3<3<3<3<3<3<3<3<3<3<3<3
+//1. Creacion de modulo y definir I/O
+module compuerta_xor(
+	input A,
+	input B,
+	output c
+	);
+/*2.definicion de componente internos(reg, cables)
+queda vacia porque trabajamos solo con logica */
+// 3.cuerpo de modulo,asignaciones, instancias
+	assign c = A ^ B;
+endmodule
+
+//<3<3<3<3<3<3<3<3<3<3<3<3
+// 7.COMPUERTA XNOR
+//<3<3<3<3<3<3<3<3<3<3<3<3
+//1. Creacion de modulo y definir I/O
+module compuerta_xnor(
+	input A,
+	input B,
+	output c
+	);
+/*2.definicion de componente internos(reg, cables)
+queda vacia porque trabajamos solo con logica */
+// 3.cuerpo de modulo,asignaciones, instancias
+	assign c = ~(A ^ B);
+endmodule
